@@ -1,8 +1,8 @@
 # Interview Questions
 
 1. How do you usually start building a team of Pokemon for a game?
-2. Do you ever decide while playing to change a team member?
-3. How do you go baout changing team members
+2. Do you ever decide to change a team member while playing through a game?
+3. How do you go about changing team members
 4. What information would help you better choose a Pokemon for your team?
 5. How do you remember teams that you have planned?
 6. Do you have much experience in team building in Pokemon?
