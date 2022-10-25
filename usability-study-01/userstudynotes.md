@@ -72,5 +72,7 @@ Wasn’t sure how to edit the team name
 
 ## Links
 Amari: https://livewooster-my.sharepoint.com/:v:/g/personal/sgebrekiros23_wooster_edu/EQCMYcpjTfNEvdEdxNJnlMEBA2Y1aUlQoljPJXj3jQvwPw?e=hrvZCz
+
 Glenna: https://livewooster-my.sharepoint.com/:v:/g/personal/sgebrekiros23_wooster_edu/EeaAHuICwNNCnfxePSRtuvMBe7o1n2YHhgxM-PHYo1UGxw?e=brMtUB
+
 Gavin: https://livewooster-my.sharepoint.com/:v:/g/personal/sgebrekiros23_wooster_edu/ERa7DCic1KFLrV_Ptd9-U8MBVQB5uHUu6VCwZcEMg8RKRw?e=k3ejwx
