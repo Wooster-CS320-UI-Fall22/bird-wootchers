@@ -26,7 +26,7 @@ d3.csv("https://gist.githubusercontent.com/armgilles/194bcff35001e7eb53a2a8b441e
                 }
                 //console.log(pokeID);
                 d3.select("tbody").insert("tr").html(
-                    "<td>" + (pokedex[i]['#']) + "</a>" + "</td>" + 
+                    "<td>" + pokeID.toString() + "</a>" + "</td>" + 
                     "<td>" + '<img src= "https://www.serebii.net/pokearth/sprites/yellow/' + 
                         pokeID.toString() + '.png" alt="sprite" border=3 height=50 width=50> <img/>' + 
                         "</a>" + "</td>" + 
