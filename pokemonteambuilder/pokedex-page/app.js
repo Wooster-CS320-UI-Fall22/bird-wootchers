@@ -8,7 +8,7 @@ d3.csv("https://gist.githubusercontent.com/armgilles/194bcff35001e7eb53a2a8b441e
     button.on("click", runEnter);
     form.on("submit", runEnter);
 
-            //
+            // Display Full Pokedex List
             for (var i = 0; i < pokedex.length; i++) {
                 console.log(pokedex[i]['name']);
                 d3.select("tbody").insert("tr").html(
@@ -53,11 +53,17 @@ d3.csv("https://gist.githubusercontent.com/armgilles/194bcff35001e7eb53a2a8b441e
         for (var i = 0; i < pokedex.length; i++) {
             console.log(pokedex[i]['name']);
             d3.select("tbody").insert("tr").html(
-            "<td>" + (pokedex[i]['#'])+"</a>"+"</td>" + 
-            "<td>" + (pokedex[i]['#'])+"</a>"+"</td>" + 
-            "<td>" + (pokedex[i]['Name'])+"</td>" +
-            "<td>" + (pokedex[i]['Type 1'])+"</td>" +
-            "<td>" + (pokedex[i]['Type 2'])+"</td" ) 
+            "<td>" + (pokedex[i]['#']) + "</a>" + "</td>" + 
+            "<td>" + '<img src= "https://www.serebii.net/pokearth/sprites/yellow/094.png" + alt="sprite" border=3 height=50 width=50> <img/>' + "</a>" + "</td>" + 
+            "<td>" + (pokedex[i]['Name']) + "</td> " +
+            "<td>" + (pokedex[i]['Type 1']) +"</td>" +
+            "<td>" + (pokedex[i]['Type 2']) +"</td>" +
+            "<td>" + (pokedex[i]['HP']) +"</td>" +
+            "<td>" + (pokedex[i]['Attack']) +"</td>" +
+            "<td>" + (pokedex[i]['Defense']) +"</td>" +
+            "<td>" + (pokedex[i]['Sp. Atk']) +"</td>" +
+            "<td>" + (pokedex[i]['Sp. Def']) +"</td>" +
+            "<td>" + (pokedex[i]['Speed']) +"</td" ) 
         }
     };
 });
