@@ -8,7 +8,7 @@ function toDexNumber(str) {
     return str;
 }
 
-d3.csv("https://gist.githubusercontent.com/armgilles/194bcff35001e7eb53a2a8b441e8b2c6/raw/92200bc0a673d5ce2110aaad4544ed6c4010f687/pokemon.csv").then(function (data) {
+d3.csv("pokemon.csv").then(function (data) {
     pokedex = [];
     for (var i = 0; i < data.length; i++) {
         if(!data[i]['Name'].includes('Mega') && parseInt((data[i]['#'])) < 152) {
@@ -55,14 +55,14 @@ d3.csv("https://gist.githubusercontent.com/armgilles/194bcff35001e7eb53a2a8b441e
             for (var i = 0; i < pokedex.length; i++) {
                 d3.select("tbody").insert("tr").html(
                 "<td>" + toDexNumber(pokedex[i]['#']) + "</a>" + "</td>" + 
-                "<td>" + '<img src= "https://www.serebii.net/pokearth/sprites/yellow/' + toDexNumber(pokedex[i]['#']) + '.png" + alt="sprite" border=3 height=50 width=50> <img/>' + "</a>" + "</td>" + 
+                "<td>" + '<img src= "../../data/sprites/' + toDexNumber(pokedex[i]['#']) + '.png" + alt="sprite" border=3 height=50 width=50> <img/>' + "</a>" + "</td>" + 
                 "<td>" + (pokedex[i]['Name']) + "</td> " +
                 "<td>" + (pokedex[i]['Type 1']) +"</td>" +
                 "<td>" + (pokedex[i]['Type 2']) +"</td>" +
                 "<td>" + (pokedex[i]['HP']) +"</td>" +
                 "<td>" + (pokedex[i]['Attack']) +"</td>" +
                 "<td>" + (pokedex[i]['Defense']) +"</td>" +
-                "<td>" + (pokedex[i]['Sp. Atk']) +"</td>" +
+                "<td>" + (pokedex[i]['Special']) +"</td>" +
                 "<td>" + (pokedex[i]['Speed']) +"</td" ) 
             }
 
@@ -103,7 +103,7 @@ d3.csv("https://gist.githubusercontent.com/armgilles/194bcff35001e7eb53a2a8b441e
             "<td>" + (filteredDex[i]['HP']) +"</td>" +
             "<td>" + (filteredDex[i]['Attack']) +"</td>" +
             "<td>" + (filteredDex[i]['Defense']) +"</td>" +
-            "<td>" + (filteredDex[i]['Sp. Atk']) +"</td>" +
+            "<td>" + (filteredDex[i]['Special']) +"</td>" +
             "<td>" + (filteredDex[i]['Speed']) +"</td" ) 
         }
     };

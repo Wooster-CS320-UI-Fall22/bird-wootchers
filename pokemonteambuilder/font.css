@@ -1,0 +1,12 @@
+@font-face {
+    font-family: rbyFont;
+    src: url(/pokemonteambuilder/pokedex-page/rbyFont.ttf);
+}
+html, body {
+    font-family: rbyFont; /*Specify your font name here*/
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*{
+    font-family: rbyFont;
+}
