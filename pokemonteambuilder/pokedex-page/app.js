@@ -79,7 +79,7 @@ d3.csv("pokemon.csv").then(function (data) {
         var inputValue = d3.select("#user-input").property("value");
         console.log(inputValue);
         
-        // This code will filter the movies looking at the actors column. It will store the values when there is a match from the text sequence the user entered and the text from our actors column from the CSV data.
+        // This code will filter the pokemon looking at the names column. It will store the values when there is a match from the text sequence the user entered and the text from our name column from the CSV data.
         
         var filteredDex = [];
         for (var i = 0; i < pokedex.length; i++) {
@@ -89,8 +89,6 @@ d3.csv("pokemon.csv").then(function (data) {
         }
 
 
-        // This was the easiest approach I found to sort the results by a different column in descending order. I had to include a new script in my head to use the _.sortBy This is the script:  
-        // var output = _.sortBy(filteredMovies, 'avg_vote').reverse();
         // Once I had all the values in my output variable, all I needed was to loop through them and add them to the table one by one. This was done using d3, where I inserted the value for each one of the columns I wanted using the necessary html to fit each table row.
         for (var i = 0; i < filteredDex.length; i++) {
             console.log(filteredDex[i]['name']);
