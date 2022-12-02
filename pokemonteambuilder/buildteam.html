@@ -1,125 +1,195 @@
 <!DOCTYPE html>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- importing jquery -->
+<script src="javascriptlibraries/jquery.min.js"></script>
+<!-- importing selectize -->
+<script src="javascriptlibraries/selectize.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
 
-<head>
-    <meta name="Pokébuilder", content="initial-scale=1", width="device-width", height="device-height">
-    <title>Pokébuilder</title>
-    <style>
-        body{
-            background-image: url('images/displayimages/route1.png');
-            max-width: 100%;
-            overflow-x: hidden;
-            
-        }
-        button{
-            font-family: 'Inter';
-            font-style: normal;
-            color: white;
-            font-weight: 400;
-            font-size: 50px;
-            line-height: 36px;
-            background: #277AF6;
-        }
-        input{
-            position: absolute;
-            width: 30%;
-            height: 9%;
-            left: calc(50% - 546px/2 + 28px);
-            top: 5%;
+<!-- Demonstrates programmatic changes to style -->
 
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 75px;
-            line-height: 91px;
+<html lang="en">
+    <head>
+        <title>Pokemon Builder</title>
 
-            color: #000000;
-        }
-        #menu{
-            position: absolute;
-            width: 200px;
-            height: 81px;
-            left: 10px;
-            top: 15px;
-        }
-        #save{
-            position: absolute;
-            left: 7.08%;
-            right: 70.9%;
-            top: 82.51%;
-            bottom: 7.72%;
-        }
-        #addone{
-            position: absolute;
-            left: 15%;
-            right: 85%;
-            top: 25%;
-            bottom: 70%;
-        }
-        #addtwo{
-            position: absolute;
-            left: 25%;
-            right: 75%;
-            top: 25%;
-            bottom: 70%;
-        }
-        #addthree{
-            position: absolute;
-            left: 45%;
-            right: 55%;
-            top: 25%;
-            bottom: 70%;
-        }
-        #addfour{
-            position: absolute;
-            left: 15%;
-            right: 85%;
-            top: 65%;
-            bottom: 35%;
-        }
-        #addfive{
-            position: absolute;
-            left: 35%;
-            right: 65%;
-            top: 65%;
-            bottom: 35%;
-        }
-        #addsix{
-            position: absolute;
-            left: 55%;
-            right: 45%;
-            top: 65%;
-            bottom: 35%;
-        }
-        
+        <style>
+            img{
+                width: 10%;
+                height: 10%;
+            }
+    
+        </style>
 
+        <script>
+            $(document).ready(function () {
+            $('select').selectize({});
+        });
+</script>
+    </head>
+    <body>
+        <form>
+        <select id="select-pokemon" placeholder="pick a pokémon..." onchange="document.getElementById('poke1').src = '../data/sprites/' + this.value + '.png'">
+            <option value="">Select a pokémon...</option>
+            <option value="pokeball">None</option>
+            <option value="001">Bulbasaur</option>
+            <option value="002">Ivysaur</option>
+            <option value="003">Venusaur</option>
+            <option value="004">Charmander</option>
+            <option value="005">Charmeleon</option>
+            <option value="006">Charizard</option>
+            <option value="007">Squirtle</option>
+            <option value="008">Wartortle</option>
+            <option value="009">Blastoise</option>
+            <option value="010">Caterpie</option>
+            <option value="011">Metapod</option>
+            <option value="012">Butterfree</option>
+            <option value="013">Weedle</option>
+            <option value="014">Kakuna</option>
+            <option value="015">Beedrill</option>
+            <option value="016">Pidgey</option>
+            <option value="017">Pidgeotto</option>
+            <option value="018">Pidgeot</option>
+            <option value="019">Rattata</option>
+            <option value="020">Raticate</option>
+            <option value="021">Spearow</option>
+            <option value="022">Fearow</option>
+            <option value="023">Ekans</option>
+            <option value="024">Arbok</option>
+            <option value="025">Pikachu</option>
+            <option value="026">Raichu</option>
+            <option value="027">Sandshrew</option>
+            <option value="028">Sandslash</option>
+            <option value="029">Nidoran♀</option>
+            <option value="030">Nidorina</option>
+            <option value="031">Nidoqueen</option>
+            <option value="032">Nidoran♂</option>
+            <option value="033">Nidorino</option>
+            <option value="034">Nidoking</option>
+            <option value="035">Clefairy</option>
+            <option value="036">Clefable</option>
+            <option value="037">Vulpix</option>
+            <option value="038">Ninetales</option>
+            <option value="039">Jigglypuff</option>
+            <option value="040">Wigglytuff</option>
+            <option value="041">Zubat</option>
+            <option value="042">Golbat</option>
+            <option value="043">Oddish</option>
+            <option value="044">Gloom</option>
+            <option value="045">Vileplume</option>
+            <option value="046">Paras</option>
+            <option value="047">Parasect</option>
+            <option value="048">Venonat</option>
+            <option value="049">Venomoth</option>
+            <option value="050">Diglett</option>
+            <option value="051">Dugtrio</option>
+            <option value="052">Meowth</option>
+            <option value="053">Persian</option>
+            <option value="054">Psyduck</option>
+            <option value="055">Golduck</option>
+            <option value="056">Mankey</option>
+            <option value="057">Primeape</option>
+            <option value="058">Gowlithe</option>
+            <option value="059">Arcanine</option>
+            <option value="060">Poliwag</option>
+            <option value="061">Poliwhirl</option>
+            <option value="062">Poliwrath</option>
+            <option value="063">Abra</option>
+            <option value="064">Kadabra</option>
+            <option value="065">Alakazam</option>
+            <option value="066">Machop</option>
+            <option value="067">Machoke</option>
+            <option value="068">Machamp</option>
+            <option value="069">Bellsprout</option>
+            <option value="070">Weepingbell</option>
+            <option value="071">Victreebell</option>
+            <option value="072">Tentacool</option>
+            <option value="073">Tentacruel</option>
+            <option value="074">Geodude</option>
+            <option value="075">Graveler</option>
+            <option value="076">Golem</option>
+            <option value="077">Ponyta</option>
+            <option value="078">Rapidash</option>
+            <option value="079">Slowpoke</option>
+            <option value="080">Slowbro</option>
+            <option value="081">Magnemite</option>
+            <option value="082">Magneton</option>
+            <option value="083">Farfetch'd</option>
+            <option value="084">Doduo</option>
+            <option value="085">Dodrio</option>
+            <option value="086">Seel</option>
+            <option value="087">Dewgong</option>
+            <option value="088">Grimer</option>
+            <option value="089">Muk</option>
+            <option value="090">Shellder</option>
+            <option value="091">Cloyster</option>
+            <option value="092">Gastly</option>
+            <option value="093">Haunter</option>
+            <option value="094">Gengar</option>
+            <option value="095">Onix</option>
+            <option value="096">Drowzee</option>
+            <option value="097">Hypno</option>
+            <option value="098">Krabby</option>
+            <option value="099">Kingler</option>
+            <option value="100">Voltorb</option>
+            <option value="101">Electrode</option>
+            <option value="102">Exeggcute</option>
+            <option value="103">Exeggutor</option>
+            <option value="104">Cubone</option>
+            <option value="105">Marowak</option>
+            <option value="106">Hitmonlee</option>
+            <option value="107">Hitmonchan</option>
+            <option value="108">Lickitung</option>
+            <option value="109">Koffing</option>
+            <option value="110">Weezing</option>
+            <option value="111">Rhyhorn</option>
+            <option value="112">Rhydon</option>
+            <option value="113">Chansey</option>
+            <option value="114">Tangela</option>
+            <option value="115">Kangaskhan</option>
+            <option value="116">Horsea</option>
+            <option value="117">Seadra</option>
+            <option value="118">Goldeen</option>
+            <option value="119">Seaking</option>
+            <option value="120">Staryu</option>
+            <option value="121">Starmie</option>
+            <option value="122">Mr. Mime</option>
+            <option value="123">Scyther</option>
+            <option value="124">Jynx</option>
+            <option value="125">Electabuzz</option>
+            <option value="126">Magmar</option>
+            <option value="127">Pinsir</option>
+            <option value="128">Tauros</option>
+            <option value="129">Magikarp</option>
+            <option value="130">Gyrados</option>
+            <option value="131">Lapras</option>
+            <option value="132">Ditto</option>
+            <option value="133">Eevee</option>
+            <option value="134">Vaporeon</option>
+            <option value="135">Jolteon</option>
+            <option value="136">Flareon</option>
+            <option value="137">Porygon</option>
+            <option value="138">Omanyte</option>
+            <option value="139">Omastar</option>
+            <option value="140">Kabuto</option>
+            <option value="141">Kabutops</option>
+            <option value="142">Aerodactyl</option>
+            <option value="143">Snorlax</option>
+            <option value="144">Articuno</option>
+            <option value="145">Zapdos</option>
+            <option value="146">Moltres</option>
+            <option value="147">Dratini</option>
+            <option value="148">Dragonair</option>
+            <option value="149">Dragonite</option>
+            <option value="150">Mewto</option>
+            <option value="151">Mew</option>
 
-    </style>
-</head>
+          </select>
 
-<body>
-    <form action="mainpage.html">
-        <button type="submit" id="menu">MENU</button>
+        <img src="../data/sprites/pokeball.png" alt="pokéball" id="poke1">
+
     </form>
-    <button type="button" id="save">SAVE</button>
-    <input type="text" id="teamname" name="teamname" placeholder="Team Name">
-    <a href="pokedex-page/pokedex.html">
-        <img src="images/displayimages/addbutton.svg" id="addone" alt="click to add pokémon">
-    </a>
-    <a href="pokedex-page/pokedex.html">
-        <img src="images/displayimages/frame1.svg" id="addtwo" alt="click to add pokémon">
-    </a>
-    <a href="pokedex-page/pokedex.html">
-        <img src="images/displayimages/frame1.svg" id="addthree" alt="click to add pokémon">
-    </a>
-    <a href="pokedex-page/pokedex.html">
-        <img src="images/displayimages/frame1.svg" id="addfour" alt="click to add pokémon">
-    </a>
-    <a href="pokedex-page/pokedex.html">
-        <img src="images/displayimages/frame1.svg" id="addfive" alt="click to add pokémon">
-    </a>
-    <a href="pokedex-page/pokedex.html">
-        <img src="images/displayimages/frame1.svg" id="addsix" alt="click to add pokémon">
-    </a>
-
-
-</body>
+    </body>
+</html>
