@@ -94,7 +94,7 @@ d3.csv("pokemon.csv").then(function (data) {
             console.log(filteredDex[i]['name']);
             d3.select("tbody").insert("tr").html(
             "<td>" + toDexNumber(filteredDex[i]['#']) + "</a>" + "</td>" + 
-            "<td>" + '<img src= "https://www.serebii.net/pokearth/sprites/yellow/' + toDexNumber(filteredDex[i]['#']) + '.png" + alt="sprite" border=3 height=50 width=50> <img/>' + "</a>" + "</td>" + 
+            "<td>" + '<img src= "../../data/sprites/' + toDexNumber(filteredDex[i]['#']) + '.png" + alt="sprite" border=3 height=50 width=50> <img/>' + "</a>" + "</td>" + 
             "<td>" + (filteredDex[i]['Name']) + "</td> " +
             "<td>" + (filteredDex[i]['Type 1']) +"</td>" +
             "<td>" + (filteredDex[i]['Type 2']) +"</td>" +

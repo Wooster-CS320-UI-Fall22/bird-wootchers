@@ -3,7 +3,7 @@
 <head>
     <meta name="Login", content="initial-scale=1", width="device-width", height="device-height">
     <title>Main Page</title>
-    <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" href="../data/rbyFont.ttf">
     <style>
         body{
             background: #F5F5F5;
@@ -31,10 +31,11 @@
 
         img{
             position: absolute;
-            width: 821px;
-            height: 852px;
-            left: -226px;
-            top: 5px;
+            width: 700px;
+            height: 700px;
+            left: 10px;
+            top: 30px;
+            image-rendering: pixelated; 
         }
 
         button{
@@ -74,7 +75,6 @@
             top: 635px;
         }
     </style>
-    <link rel="stylesheet" href="../font.css">
 </head>
 
 <body>
@@ -82,11 +82,12 @@
     <form action="buildteam.html">
         <button type="submit" id="newteam">New Team</button>
     </form>
-    <form action="buildteam.html">
-        <button type="submit" id="manageteams">Manage Teams</button>
+    <form action="test.html">
+        <button type="submit" id="manageteams">Browse Teams</button>
     </form>
     <form action="pokedex-page/pokedex.html">
         <button type="submit" id="redactedteams">POKeDEX</button>
     </form>
-    <img src="images/displayimages/charmander.png" alt="Char!! Char!!">
+    <img id = "randpoke" alt="Pokemon sprite">
+    <script src = "home.js"></script>
 </body>
