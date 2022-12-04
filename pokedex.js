@@ -78,13 +78,25 @@ d3.csv("data/pokemon-stats/pokemon.csv").then(function (data) {
         // This code will get the user's input from what the user will type in the html <input> since we assigned it the "user-input" id. It will get the value and store it in our inputValue variable
         var inputValue = d3.select("#user-input").property("value");
         console.log(inputValue);
+        var filter = document.querySelector("#filter")
+        console.log(filter.value);
         
         // This code will filter the pokemon looking at the names column. It will store the values when there is a match from the text sequence the user entered and the text from our name column from the CSV data.
         
         var filteredDex = [];
-        for (var i = 0; i < pokedex.length; i++) {
-            if (pokedex[i]['Name'].toLowerCase().includes(inputValue.toLowerCase())) {
-                filteredDex.push(pokedex[i]);
+
+
+        if (filter.value == 'Name') {
+            for (var i = 0; i < pokedex.length; i++) {
+                if (pokedex[i]['Name'].toLowerCase().includes(inputValue.toLowerCase())) {
+                    filteredDex.push(pokedex[i]);
+                }
+            }
+        } else {
+            for (var i = 0; i < pokedex.length; i++) {
+                if (pokedex[i]['Type 1'].toLowerCase().includes(inputValue.toLowerCase()) || pokedex[i]['Type 2'].toLowerCase().includes(inputValue.toLowerCase())) {
+                    filteredDex.push(pokedex[i]);
+                }
             }
         }
 
