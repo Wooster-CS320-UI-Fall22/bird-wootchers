@@ -11,7 +11,7 @@
     <script>
         function upvote() {
             let vote = document.querySelector("#vote");
-            vote.value = parseInt(vote.value) + 1;
+            vote = parseInt(vote) + 1;
             document.querySelector("#vote").innerHTML = vote;
         }
         document.addEventListener("DOMContentLoaded",function() {
@@ -29,26 +29,6 @@
             height: 115px;
             padding: 10px;
         }
-        .vote_up {
-            display: inline-block;
-            overflow: hidden;
-            width: 40px;
-            height: 25px;
-            cursor: pointer;
-            background: url('https://i.stack.imgur.com/nxBdX.png');
-            background-position: 0 -25px;
-            margin-left: 5px;
-        } 
-        .vote_down {
-            display: inline-block;
-            overflow: hidden;
-            width: 40px;
-            height: 25px;
-            cursor: pointer;
-            background: url('https://i.stack.imgur.com/vWw7n.png');
-            background-position: 0 -1px;
-            margin-top: 20px;
-        }
         .container_width {
             width: 85%
         }
@@ -61,15 +41,11 @@
         .search_position {
             padding-top: 1%;
         }
-        .vote_position_up {
-            position: relative;
-            top: 48px;
-            left: 40px;
+        .up {
+            color: green;
         }
-        .vote_position_down {
-            position: relative;
-            top: 55px;
-            left: 42px;
+        .down {
+            color: red;
         }
 
     </style>
@@ -82,19 +58,19 @@
                         <div class="row align-items-center">
                             <div class="col">
                                 <button id="upvote">
-                                    <i class="fa fa-caret-up"></i>
+                                    <i class="fa fa-caret-up green"></i>
                                 </button>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <p id="vote">0</p>
+                                <div id="vote">0</div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <button id="downvote">
-                                    <i class="fa fa-caret-down"></i>
+                                    <i class="fa fa-caret-down red"></i>
                                 </button>
                             </div>
                         </div>
