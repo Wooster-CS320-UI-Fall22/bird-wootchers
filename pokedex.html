@@ -2,23 +2,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>PokeTeam Builder</title>
+        <link rel = "icon" href = "data/sprites/logo.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>POKeDex</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="../font.css">
         <script src="https://d3js.org/d3.v5.min.js"></script>
-        <script src="app.js"></script>
+        <script src="pokedex.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
     </head>
     <body style = "font-family:rbyFont">
+
+         <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buildteam.html">New Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="browse.html">Browse Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pokedex.html">Pokedex</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login-index.html">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="container">
             <div class="row">
                 <div class= "col-md-12" >
                     <h1 class=>POKeDEX</h1>
-                    <h2 class=>Search by name:</h2>
+                       <h2 class=>
+                            <form action="#">
+                                <label for="lang">Search by: </label>
+                                <select name="languages" id="filter">
+                                <option value="Name">Name</option>
+                                <option value="Type">Type</option>
+                                </select>
+                                <!-- <input type="submit" value="Submit" /> -->
+                        </form>
+                      </h2>
                     <form id="form">
-                        <input class="form-control" id="user-input" placeholder="Enter Name">
+                        <input class="form-control" id="user-input" placeholder="Enter">
                         <button id="button" class="btn btn-secondary">Search</button>
                     </form>
                     <table class="table" cellpadding="10">

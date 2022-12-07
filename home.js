@@ -9,9 +9,14 @@ function randomNumber() {
     console.log(num.toString());
     dexNum = toDexNumber(num.toString());
 
+    var missingno = Math.floor(Math.random() * (1000 - 1) + 1);
+    if (missingno == 1) {
+        return '000';
+    }
+
     return dexNum;
 }
 var numDebug = randomNumber()
 console.log(numDebug)
 
-document.getElementById("randpoke").src = "../data/sprites/" + numDebug + ".png";
+document.getElementById("randpoke").src = "data/sprites/" + numDebug + ".png";
