@@ -98,13 +98,14 @@
 </head>
 <body>
     <h1>Log in, Pokemon Trainer!</h1>
-    <form action="home.html">
-        <input type="text" id="username" name="username" placeholder="username">
-        <input type="password" id="password" name="password" placeholder="password">
-        <img src="images/displayimages/squirtle.png" alt="Squirtle!!">
-        <img style="image-rendering: pixelated;" id = "logo" src="images/data/sprites/logo.png" alt = "logo">
-        <h2 id = "logotext"> PokeTeam Builder </h2>
-        <button type="submit" id="loginuser">Log in</button>
-    </form>
+    <input type="text" id="username" name="username" placeholder="username">
+    <input type="password" id="password" name="password" placeholder="password">
+    <img src="images/displayimages/squirtle.png" alt="Squirtle!!">
+    <img style="image-rendering: pixelated;" id = "logo" src="images/data/sprites/logo.png" alt = "logo">
+    <h2 id = "logotext"> PokeTeam Builder </h2>
+    <button type="button" id="loginuser" onclick="(()=>{
+        localStorage.setItem('username', document.getElementById('username').value);
+        window.location.replace('/home.html');
+    })()">Log in</button>
 
 </body>
