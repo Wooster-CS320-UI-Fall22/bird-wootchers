@@ -7,23 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="data/rbyFont.ttf">
     <style>
-        body{
-            background: #F5F5F5;
-            max-width: 100%;
-            overflow-x: hidden;
-            overflow: hidden;
-            font-family: rbyFont;
-        }
-
         h1{
             position: absolute;
             width: 534px;
             height: 113px;
             left: 786px;
             top: 100px;
-
-            font-family: rbyFont;
-            font-style: normal;
             font-weight: 400;
             font-size: 48px;
             line-height: 58px;
@@ -42,13 +31,12 @@
             border-radius: 20px;
             border: none;
 
-            font-family: rbyFont;
-            font-style: normal;
             color: white;
+            font-family: rbyFont;
             font-weight: 400;
             font-size: 30px;
             line-height: 36px;
-            background: #EE6B4E;
+            background: darkgray;
         }
 
         #newteam{
@@ -56,7 +44,7 @@
             width: 628px;
             height: 78px;
             left: 739px;
-            top: 319px;        
+            top: 290px;        
         }
 
         #manageteams{
@@ -64,7 +52,7 @@
             width: 628px;
             height: 78px;
             left: 739px;
-            top: 472px;
+            top: 420px;
         }
 
         #redactedteams{
@@ -72,22 +60,20 @@
             width: 628px;
             height: 78px;
             left: 739px;
-            top: 635px;
-        }
-        *{
-            font-family: rbyFont;
+            top: 550px;
         }
     </style>
+    <link rel="stylesheet" href="font.css">
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar sticky-top navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
+                    <a class="nav-link" style="color: #ffffff;" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="buildteam.html">New Team</a>
@@ -101,7 +87,7 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="login-index.html">Sign Out</a>
+                    <a class="nav-link" href="index.html">Sign Out</a>
                 </li>
             </ul>
         </div>
