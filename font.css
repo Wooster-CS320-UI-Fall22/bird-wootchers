@@ -1,6 +1,6 @@
 @font-face {
     font-family: rbyFont;
-    src: url(data/rbyFont.ttf);
+    src: url(images/data/rbyFont.ttf);
 }
 html, body {
     font-family: rbyFont; /*Specify your font name here*/

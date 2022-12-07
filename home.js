@@ -19,4 +19,4 @@ function randomNumber() {
 var numDebug = randomNumber()
 console.log(numDebug)
 
-document.getElementById("randpoke").src = "data/sprites/" + numDebug + ".png";
+document.getElementById("randpoke").src = "images/data/sprites/" + numDebug + ".png";

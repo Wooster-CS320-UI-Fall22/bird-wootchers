@@ -1,3 +1,19 @@
+function share() {
+    data = {
+        "poke1": document.getElementById("select-pokemon1").value,
+        "poke2": document.getElementById("select-pokemon2").value,
+        "poke3": document.getElementById("select-pokemon3").value,
+        "poke4": document.getElementById("select-pokemon4").value,
+        "poke5": document.getElementById("select-pokemon5").value,
+        "poke6": document.getElementById("select-pokemon6").value
+    }
+    URL = '/shareteam'
+    xhr = new XMLHttpRequest();
+    sender = JSON.stringify(data);
+    xhr.open('POST', URL);
+    xhr.send(sender);
+}
+
 function teamEdit(imageid, idnumber){
 
     document.getElementById(imageid).src = 'images/sprites/' + idnumber + '.png';

@@ -9,7 +9,7 @@ function toDexNumber(str) {
     return str;
 }
 
-d3.csv("data/pokemon-stats/pokemon.csv").then(function (data) {
+d3.csv("images/data/pokemon-stats/pokemon.csv").then(function (data) {
     //Create pokedex list from csv data
     pokedex = [];
     for (var i = 0; i < data.length; i++) {
@@ -24,7 +24,7 @@ d3.csv("data/pokemon-stats/pokemon.csv").then(function (data) {
             for (var i = 0; i < pokedex.length; i++) {
                 d3.select("tbody").insert("tr").html(
                 "<td>" + toDexNumber(pokedex[i]['#']) + "</a>" + "</td>" + 
-                "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + toDexNumber(pokedex[i]['#']) + '.png" + alt="sprite" border=3 height=60 width=60> <img/>' + "</a>" + "</td>" + 
+                "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + toDexNumber(pokedex[i]['#']) + '.png" + alt="sprite" border=3 height=60 width=60> <img/>' + "</a>" + "</td>" + 
                 "<td>" + (pokedex[i]['Name']) + "</td> " +
                 "<td>" + (pokedex[i]['Type 1']) +"</td>" +
                 "<td>" + (pokedex[i]['Type 2']) +"</td>" +
@@ -72,7 +72,7 @@ d3.csv("data/pokemon-stats/pokemon.csv").then(function (data) {
             console.log(filteredDex[i]['name']);
             d3.select("tbody").insert("tr").html(
             "<td>" + toDexNumber(filteredDex[i]['#']) + "</a>" + "</td>" + 
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + toDexNumber(filteredDex[i]['#']) + '.png" + alt="sprite" border=3 height=60 width=60> <img/>' + "</a>" + "</td>" + 
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + toDexNumber(filteredDex[i]['#']) + '.png" + alt="sprite" border=3 height=60 width=60> <img/>' + "</a>" + "</td>" + 
             "<td>" + (filteredDex[i]['Name']) + "</td> " +
             "<td>" + (filteredDex[i]['Type 1']) +"</td>" +
             "<td>" + (filteredDex[i]['Type 2']) +"</td>" +
