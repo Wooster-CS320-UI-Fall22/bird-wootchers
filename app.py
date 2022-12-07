@@ -8,17 +8,14 @@ app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 
 @app.route('/', methods=["GET"])
 def index():
-    return render_template("home.html")
+    return render_template("index.html")
 
 @app.route("/shareteam", methods=["POST"])
 def share_team():
     jsdata = json.loads(request.data.decode())
-    if '' not in jsdata.values():
-        with open('images/data/teams.csv', 'a') as team_data:
-            team_data.write(f"{jsdata['poke1']},{jsdata['poke2']},{jsdata['poke3']},{jsdata['poke4']},{jsdata['poke5']},{jsdata['poke6']},0,username\n")    
-        return json.dumps({'success':True}), 200, {'ContentType':'application/json'}
-    else:
-        return json.dumps({'success':False}), 400, {'ContentType':'application/json'}
+    with open('images/data/teams.csv', 'a') as team_data:
+        team_data.write(f"{jsdata['poke1']},{jsdata['poke2']},{jsdata['poke3']},{jsdata['poke4']},{jsdata['poke5']},{jsdata['poke6']},{jsdata['rating']},{jsdata['username']}\n")    
+    return json.dumps({'success':True}), 200, {'ContentType':'application/json'}
 
 @app.route('/<name>', methods=["GET"])
 def passthru(name=''):

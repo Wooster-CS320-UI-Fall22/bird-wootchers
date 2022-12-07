@@ -5,7 +5,9 @@ function share() {
         "poke3": document.getElementById("select-pokemon3").value,
         "poke4": document.getElementById("select-pokemon4").value,
         "poke5": document.getElementById("select-pokemon5").value,
-        "poke6": document.getElementById("select-pokemon6").value
+        "poke6": document.getElementById("select-pokemon6").value,
+        "rating": 0,
+        "username": localStorage.getItem("username")
     }
     URL = '/shareteam'
     xhr = new XMLHttpRequest();
