@@ -52,12 +52,12 @@ d3.csv("images/data/teams.csv").then(function (data) {
         for (var i = 0; i < filteredTeams.length; i++) {
             d3.select("tbody").insert("tr").html(
             "<td style=text-align:center>" + filteredTeams[i]["rating"] + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team0"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team1"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team2"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team3"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team4"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team5"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team0"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team1"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team2"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team3"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team4"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team5"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
             "<td style=text-align:center>" + filteredTeams[i]["user"] + "</a>" + "</td>"
             ) 
         }
