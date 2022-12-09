@@ -63,7 +63,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-2">
-                <select id="select-pokemon1" placeholder="pick a pokemon..." onchange="teamEdit('poke1', this.value)">
+                <select id="select-pokemon1" placeholder="pick a pokemon..." onchange="teamEdit(1, 'poke1', this.value)">
                     <option value="">Select a pokémon...</option>
                     <option value="pokeball">none</option>
                     <option value="001">Bulbasaur</option>
@@ -220,7 +220,7 @@
                     </select>
             </div> 
             <div class="col-sm-2">
-                <select id="select-pokemon2" placeholder="pick a pokemon..." onchange="teamEdit('poke2', this.value)">
+                <select id="select-pokemon2" placeholder="pick a pokemon..." onchange="teamEdit(2, 'poke2', this.value)">
                     <option value="">Select a pokémon...</option>
                     <option value="pokeball">none</option>
                     <option value="001">Bulbasaur</option>
@@ -378,7 +378,7 @@
                   </select>
             </div>
             <div class="col-sm-2">
-                <select id="select-pokemon3" placeholder="pick a pokemon..." onchange="teamEdit('poke3', this.value)">
+                <select id="select-pokemon3" placeholder="pick a pokemon..." onchange="teamEdit(3, 'poke3', this.value)">
                     <option value="">Select a pokémon...</option>
                     <option value="pokeball">none</option>
                     <option value="001">Bulbasaur</option>
@@ -536,15 +536,15 @@
             </div>
             <div class="col-sm-2">
                 <h3>normal: </h3>
-                <h3 id="normal">-1</h3>
+                <h3 id="normal">0</h3>
             </div>
             <div class="col-sm-2">
                 <h3>fighting: </h3>
-                <h3 id="fighting">-1</h3>
+                <h3 id="fighting">0</h3>
             </div>
             <div class="col-sm-2">
                 <h3>flying: </h3>
-                <h3 id="flying">-1</h3>
+                <h3 id="flying">0</h3>
             </div>
         </div>
         <div class="row no-gutters">
@@ -561,20 +561,20 @@
             </div>
             <div class="col-sm-2">
                 <h3>poison: </h3>
-                <h3 id="poison">-1</h3>
+                <h3 id="poison">0</h3>
             </div>
             <div class="col-sm-2">
                 <h3>ground: </h3>
-                <h3 id="ground">-1</h3>
+                <h3 id="ground">0</h3>
             </div>
             <div class="col-sm-2">
                 <h3>rock: </h3>
-                <h3 id="rock">-1</h3>
+                <h3 id="rock">0</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-2">
-                <select id="select-pokemon4" placeholder="pick a pokemon..." onchange="teamEdit('poke4', this.value)">
+                <select id="select-pokemon4" placeholder="pick a pokemon..." onchange="teamEdit(4, 'poke4', this.value)">
                     <option value="">Select a pokémon...</option>
                     <option value="pokeball">none</option>
                     <option value="001">Bulbasaur</option>
@@ -732,7 +732,7 @@
                   </select>
             </div>
             <div class="col-sm-2">
-                <select id="select-pokemon5" placeholder="pick a pokemon..." onchange="teamEdit('poke5', this.value)">
+                <select id="select-pokemon5" placeholder="pick a pokemon..." onchange="teamEdit(5, 'poke5', this.value)">
                     <option value="">Select a pokémon...</option>
                     <option value="pokeball">none</option>
                     <option value="001">Bulbasaur</option>
@@ -890,7 +890,7 @@
                   </select>
             </div>
             <div class="col-sm-2">
-                <select id="select-pokemon6" placeholder="pick a pokemon..." onchange="teamEdit('poke6', this.value)">
+                <select id="select-pokemon6" placeholder="pick a pokemon..." onchange="teamEdit(6, 'poke6', this.value)">
                     <option value="">Select a pokémon...</option>
                     <option value="pokeball">none</option>
                     <option value="001">Bulbasaur</option>
@@ -1049,17 +1049,17 @@
             </div>
             <div class="col-sm-2">
                 <h3>bug: </h3>
-                <h3 id="bug">-1</h3>
+                <h3 id="bug">0</h3>
 
             </div>
             <div class="col-sm-2">
                 <h3>ghost: </h3>
-                <h3 id="ghost">-1</h3>
+                <h3 id="ghost">0</h3>
 
             </div>
             <div class="col-sm-2">
                 <h3>fire: </h3>
-                <h3 id="fire">-1</h3>
+                <h3 id="fire">0</h3>
 
             </div>
         </div>
@@ -1078,17 +1078,17 @@
             </div>
             <div class="col-sm-2">
                 <h3>water: </h3>
-                <h3 id="water">-1</h3>
+                <h3 id="water">0</h3>
 
             </div>
             <div class="col-sm-2">
                 <h3>grass: </h3>
-                <h3 id="grass">-1</h3>
+                <h3 id="grass">0</h3>
 
             </div>
             <div class="col-sm-2">
                 <h3>electric: </h3>
-                <h3 id="electric">-1</h3>
+                <h3 id="electric">0</h3>
 
             </div>
         </div>
@@ -1104,17 +1104,17 @@
             </div>
             <div class="col-sm-2">
                 <h3>psychic: </h3>
-                <h3 id="psychic">-1</h3>
+                <h3 id="psychic">0</h3>
 
             </div>
             <div class="col-sm-2">
                 <h3>ice: </h3>
-                <h3 id="ice">-1</h3>
+                <h3 id="ice">0</h3>
 
             </div>
             <div class="col-sm-2">
                 <h3>dragon: </h3>
-                <h3 id="dragon">-1</h3>
+                <h3 id="dragon">0</h3>
         </div>
 
 
