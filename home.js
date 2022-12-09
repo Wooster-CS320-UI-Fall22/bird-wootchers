@@ -20,3 +20,4 @@ var numDebug = randomNumber()
 console.log(numDebug)
 
 document.getElementById("randpoke").src = "images/data/sprites/" + numDebug + ".png";
+document.getElementById("welcome").innerHTML = "Welcome,<br>" + localStorage.getItem("username") + "!";
