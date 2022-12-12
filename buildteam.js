@@ -22,6 +22,7 @@ function share() {
     sender = JSON.stringify(data);
     xhr.open('POST', URL);
     xhr.send(sender);
+    alert("team uploaded!");
 }
 
 function teamEdit(dropdownnumber, imageid, idnumber){

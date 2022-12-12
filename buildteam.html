@@ -19,8 +19,8 @@
 
         <style>
             img{
-                width: 100%;
-                height: 100%;
+                width: 95%;
+                height: 95%;
                 image-rendering: pixelated;
             }
     
@@ -61,7 +61,7 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="mt-3 row">
             <div class="col-sm-2">
                 <select id="select-pokemon1" placeholder="pick a pokemon..." onchange="teamEdit(1, 'poke1', this.value)">
                     <option value="">Select a pokémon...</option>
@@ -219,6 +219,7 @@
                     <option value="151">Mew</option>
                     </select>
             </div> 
+            
             <div class="col-sm-2">
                 <select id="select-pokemon2" placeholder="pick a pokemon..." onchange="teamEdit(2, 'poke2', this.value)">
                     <option value="">Select a pokémon...</option>
@@ -534,40 +535,39 @@
                     <option value="151">Mew</option>        
                   </select>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 mt-1">
                 <h3>normal: </h3>
                 <h3 id="normal">0</h3>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 mt-1">
                 <h3>fighting: </h3>
                 <h3 id="fighting">0</h3>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 mt-1">
                 <h3>flying: </h3>
                 <h3 id="flying">0</h3>
             </div>
-        </div>
+            </div>
         <div class="row no-gutters">
             <div class="col-sm-2 w-10 h-10">
                 <img src="images/sprites/pokeball.png" alt="pokéball" id="poke1">
             </div>
             <div class="col-sm-2 w-10 h-10">
                 <img src="images/sprites/pokeball.png" alt="pokéball" id="poke2">
-
             </div>
             <div class="col-sm-2 w-10 h-10">
                 <img src="images/sprites/pokeball.png" alt="pokéball" id="poke3">
-
             </div>
-            <div class="col-sm-2">
+            
+            <div class="col-sm-2 mt-5"> 
                 <h3>poison: </h3>
                 <h3 id="poison">0</h3>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 mt-5">
                 <h3>ground: </h3>
                 <h3 id="ground">0</h3>
             </div>
-            <div class="col-sm-2">
+            <div class="w-10 col-sm-2 mt-5">
                 <h3>rock: </h3>
                 <h3 id="rock">0</h3>
             </div>
@@ -1076,17 +1076,17 @@
                 <img src="images/sprites/pokeball.png" alt="pokéball" id="poke6">
 
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 mt-5">
                 <h3>water: </h3>
                 <h3 id="water">0</h3>
 
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 mt-5">
                 <h3>grass: </h3>
                 <h3 id="grass">0</h3>
 
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 mt-5">
                 <h3>electric: </h3>
                 <h3 id="electric">0</h3>
 
@@ -1096,23 +1096,19 @@
             <div class="col-sm-1">
             </div>
             <div class="col-sm-5">         
-                <h1> </h1>   
-                <h1> </h1>   
-                <h1> </h1>   
-                <h1> </h1>       
-                <button onclick="share()" type="button" class="btn btn-primary">Share</button>
+                <button onclick="share()" type="button" class="btn btn-primary btn-lg">Share</button>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 mb-5">
                 <h3>psychic: </h3>
                 <h3 id="psychic">0</h3>
 
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 mb-5">
                 <h3>ice: </h3>
                 <h3 id="ice">0</h3>
 
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 mb-5">
                 <h3>dragon: </h3>
                 <h3 id="dragon">0</h3>
         </div>
