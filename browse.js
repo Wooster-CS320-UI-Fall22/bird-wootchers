@@ -1,7 +1,7 @@
 //from tutorial: https://levelup.gitconnected.com/building-a-simple-website-that-outputs-results-from-a-csv-using-users-input-bfcb782ced45
 //Image sources: https://www.serebii.net/pokedex/stat/all.shtml
 
-d3.csv("data/teams.csv").then(function (data) {
+d3.csv("images/data/teams.csv").then(function (data) {
     //Create teams list object with CSV data
     teams = [];
     for (var i = 0; i < data.length; i++) {
@@ -16,13 +16,13 @@ d3.csv("data/teams.csv").then(function (data) {
     //Output teams list
     for (var i = 0; i < teams.length; i++) {
         d3.select("tbody").insert("tr").html(
-        "<td style=text-align:center>" + teams[i]["rating"] + "</a>" + "</td>" +
-        "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + teams[i]["team0"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-        "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + teams[i]["team1"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-        "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + teams[i]["team2"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-        "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + teams[i]["team3"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-        "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + teams[i]["team4"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-        "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + teams[i]["team5"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+        "<td style=text-align:center>" + (Math.floor(Math.random() * (11 - 1) + 1)).toString() + "</a>" + "</td>" +
+        "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + teams[i]["team0"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+        "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + teams[i]["team1"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+        "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + teams[i]["team2"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+        "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + teams[i]["team3"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+        "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + teams[i]["team4"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+        "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + teams[i]["team5"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
         "<td style=text-align:center>" + teams[i]["user"] + "</a>" + "</td>"
         ) 
     }
@@ -51,13 +51,13 @@ d3.csv("data/teams.csv").then(function (data) {
         //Output filtered list
         for (var i = 0; i < filteredTeams.length; i++) {
             d3.select("tbody").insert("tr").html(
-            "<td style=text-align:center>" + filteredTeams[i]["rating"] + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team0"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team1"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team2"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team3"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team4"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
-            "<td>" + '<img style = "image-rendering:pixelated" src= "../../data/sprites/' + filteredTeams[i]["team5"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td style=text-align:center>" + (Math.floor(Math.random() * (11 - 1) + 1)).toString() + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team0"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team1"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team2"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team3"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team4"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
+            "<td>" + '<img style = "image-rendering:pixelated" src= "images/data/sprites/' + filteredTeams[i]["team5"] + '.png" + alt="sprite" border=3 height=70 width=70> <img/>' + "</a>" + "</td>" +
             "<td style=text-align:center>" + filteredTeams[i]["user"] + "</a>" + "</td>"
             ) 
         }

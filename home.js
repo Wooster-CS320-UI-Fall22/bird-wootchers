@@ -5,7 +5,7 @@ function toDexNumber(str) {
     return str;
 }
 function randomNumber() {
-    var num = Math.floor(Math.random() * (151 - 1) + 1);
+    var num = Math.floor(Math.random() * (152 - 1) + 1);
     console.log(num.toString());
     dexNum = toDexNumber(num.toString());
 
@@ -19,4 +19,5 @@ function randomNumber() {
 var numDebug = randomNumber()
 console.log(numDebug)
 
-document.getElementById("randpoke").src = "data/sprites/" + numDebug + ".png";
+document.getElementById("randpoke").src = "images/data/sprites/" + numDebug + ".png";
+document.getElementById("welcome").innerHTML = "Welcome,<br>" + localStorage.getItem("username") + "!";
